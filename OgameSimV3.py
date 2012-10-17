@@ -1,0 +1,61 @@
+#! /usr/bin/env python
+
+
+class Planet():
+    pass
+
+
+def NewPlanet(PlanetList,TechList,FleetList,IdealPlanet,Metalbonus,Crystalbonus,Deutbonus):
+    newplanet = Planet()
+    PlanetList.append(newplanet)
+    length = len(PlanetList) - 1
+    setattr(PlanetList[length],'Temperature',37)
+    setattr(PlanetList[length],'MetalMine',0)
+    setattr(PlanetList[length],'CrystalMine',0)
+    setattr(PlanetList[length],'DeuteriumMine',0)
+    setattr(PlanetList[length],'EnergyProd',0)
+    setattr(PlanetList[length],'EnergyUsed',0)
+    setattr(PlanetList[length],'ProductionFactor',1)
+    setattr(PlanetList[length],'Resource',[500+Metalbonus,500+Crystalbonus,Deutbonus])
+    setattr(PlanetList[length],'Prod',[30,15,0])
+    setattr(PlanetList[length],'MetalStorage',0)
+    setattr(PlanetList[length],'CrystalStorage',0)
+    setattr(PlanetList[length],'DeuteriumStorage',0)
+    setattr(PlanetList[length],'MetalCap',10000)
+    setattr(PlanetList[length],'CrystalCap',10000)
+    setattr(PlanetList[length],'DeuteriumCap',10000)
+    setattr(PlanetList[length],'SolarPlant',0)
+    setattr(PlanetList[length],'FusionPlant',0)
+    setattr(PlanetList[length],'Satellites',0)
+    setattr(PlanetList[length],'Robots',0)
+    setattr(PlanetList[length],'Shipyard',0)
+    setattr(PlanetList[length],'ResearchLab',0)
+    setattr(PlanetList[length],'AllianceDepot',0)
+    setattr(PlanetList[length],'MissileSilo',0)
+    setattr(PlanetList[length],'Nanites',0)
+    setattr(PlanetList[length],'Terraformer',0)
+    setattr(PlanetList[length],'RocketLauncher',0)
+    setattr(PlanetList[length],'LightLaser',0)
+    setattr(PlanetList[length],'HeavyLaser',0) 
+    setattr(PlanetList[length],'GaussCannon',0)
+    setattr(PlanetList[length],'IonCannon',0)
+    setattr(PlanetList[length],'PlasmaTurret',0)
+    setattr(PlanetList[length],'SmallShieldDome',0)	
+    setattr(PlanetList[length],'LargeShieldDome',0)
+    setattr(PlanetList[length],'ABM',0)
+    setattr(PlanetList[length],'IPM',0)
+    setattr(PlanetList[length],'LightFighter',0)
+    setattr(PlanetList[length],'HeavyFighter',0)
+    setattr(PlanetList[length],'Cruiser',0)
+    setattr(PlanetList[length],'Battleship',0)
+    setattr(PlanetList[length],'SmallCargo',0)
+    setattr(PlanetList[length],'LargeCargo',0)
+    setattr(PlanetList[length],'ColonyShip',0)
+    setattr(PlanetList[length],'Battlecruiser',0)
+    setattr(PlanetList[length],'Bomber',0)
+    setattr(PlanetList[length],'Destroyer',0)
+    setattr(PlanetList[length],'Deathstar',0)
+    setattr(PlanetList[length],'Recycler',0)
+    setattr(PlanetList[length],'Probe',0)
+    return PlanetList;
+
